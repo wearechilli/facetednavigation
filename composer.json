@@ -1,0 +1,30 @@
+{
+	"name": "wearechilli/facetednavigation",
+	"type": "craft-plugin",
+	"license": "MIT",
+	"description": "Faceted Navigation plugin for Craft CMS",
+	"homepage": "https://github.com/wearechilli/facetednavigation",
+	"authors": [
+		{
+			"name": "Chilli",
+			"email": "support@chilli.be",
+			"homepage": "https://chilli.be/en"
+		},
+		{
+			"name": "Peter J. Herrel",
+			"email": "peter@chilli.be",
+			"homepage": "https://github.com/diggy"
+		},
+		{
+			"name": "Iain Urquhart",
+			"email": "shout@iain.co.nz",
+			"homepage": "https://github.com/iainurquhart/FacetedNav_CraftPlugin"
+		}
+	],
+	"keywords": [
+		"craft"
+	],
+	"support": {
+		"issues": "https://github.com/wearechilli/facetednavigation/issues"
+	}
+}

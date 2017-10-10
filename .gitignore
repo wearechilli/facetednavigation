@@ -1,0 +1,10 @@
+# GITIGNORE
+
+# OS
+.DS_Store
+
+# logs
+*.log
+
+# composer
+vendor/
