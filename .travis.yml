@@ -1,0 +1,36 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  - 7.1
+
+matrix:
+  allow_failures:
+    - php: 5.3
+    - php: 5.4
+    - php: 5.5
+    - php: 5.6
+    - php: 7.1
+
+# before_script:
+#   - find . -name "*.php" -print0 | xargs -0 -n1 -P8 php -l
+#   - curl -sS https://codeload.github.com/pixelandtonic/Craft-Release/zip/master > craft.zip
+#   - unzip craft.zip
+#   - rm craft.zip
+#   - mv Craft-Release-master craft
+#   - mkdir craft/config
+#   - echo "<?php return array('user' => 'test');" > craft/config/db.php
+#   - mkdir craft/storage
+#   - mkdir -p craft/plugins/facetednavigation
+#   - for item in *; do if [[ ! "$item" == "craft" ]]; then mv $item craft/plugins/facetednavigation; fi; done
+#   - cd craft/app
+#   - composer require mockery/mockery
+#   - cd ../..
+
+# script: phpunit --bootstrap craft/app/tests/bootstrap.php --configuration craft/plugins/facetednavigation/phpunit.xml.dist craft/plugins/facetednavigation/tests
+
+script: find . -name "*.php" -print0 | xargs -0 -n1 -P8 php -l
